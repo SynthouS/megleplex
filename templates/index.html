@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Megleplex Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.png') }}"/>
+</head>
+<body>
+    <h1>It's a full Megleplex number</h1>
+    <div id="number-container">1</div>
+    <div id="congrats" class="hidden">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Congrats">
+        <h2>Universe Annihilated! You've reached the Megleplex!</h2>
+        <a href="https://github.com/SynthouS/megaplex" target="_blank">View Project on GitHub</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
